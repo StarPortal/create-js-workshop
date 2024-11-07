@@ -1,0 +1,24 @@
+{
+  "name": "@starportal/create-workshop",
+  "version": "1.0.0",
+  "description": "The workshop template for StarPortal",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepare": "husky"
+  },
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6",
+    "tsup": "^8.3.5",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3"
+  }
+}
