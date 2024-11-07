@@ -30,6 +30,12 @@ async function init() {
   const templateDir = path.join(templateRoot, templateName);
   fs.cpSync(templateDir, projectDir, { recursive: true });
 
+  const packageJsonPath = path.join(projectDir, "package.json");
+  const packageJson = require(packageJsonPath);
+
+  packageJson.name = projectName;
+  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+
   console.log(`Project "${projectName}" created at ${projectDir}`);
 }
 
