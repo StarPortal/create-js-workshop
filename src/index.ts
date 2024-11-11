@@ -7,6 +7,7 @@ import childProcess from "child_process";
 import prompts from "prompts";
 
 import { Config } from "./config";
+import { templates } from "./templates";
 
 function getPackageManager() {
   const userAgent = process.env.npm_config_user_agent ?? "";
@@ -69,12 +70,7 @@ async function init() {
           type: argv.template ? null : "select",
           name: "template",
           message: "Choose a template",
-          choices: [
-            {
-              title: "Hello World",
-              value: "hello-world",
-            },
-          ],
+          choices: templates,
         },
       ],
       {
