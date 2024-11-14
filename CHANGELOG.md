@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/StarPortal/create-js-workshop/compare/v0.1.0...v0.2.0) (2024-11-14)
+
+
+### Features
+
+* add renderTempalte to process dotfiles in template ([c0d0bb6](https://github.com/StarPortal/create-js-workshop/commit/c0d0bb6ed737e24a4124e9706a13b5dbd49dd403))
+
+
+### Bug Fixes
+
+* remove unnecessary package-lock.json in template ([afa1782](https://github.com/StarPortal/create-js-workshop/commit/afa1782d30a6453254b6b9827eded0e7ef8b82cf))
+
 ## 0.1.0 (2024-11-14)
 
 
