@@ -1,7 +1,16 @@
 name: Publish to NPM.js
+
 on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force a release'
+        required: false
+        default: 'false'
+        type: boolean
   release:
-    types: [published]
+    types:
+      - released
 
 jobs:
   build:
