@@ -6,7 +6,7 @@ export const templates: Choice[] = [
     value: "hello-world",
   },
   {
-    title: "LINE Bot testing 2025",
+    title: "LINE Bot Testing 2025",
     value: "line-bot-testing-2025",
   },
 ];

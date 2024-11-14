@@ -8,6 +8,7 @@ import prompts from "prompts";
 
 import { Config } from "./config";
 import { templates } from "./templates";
+import { renderTemplate } from "./render";
 
 function getPackageManager() {
   const userAgent = process.env.npm_config_user_agent ?? "";
@@ -103,7 +104,8 @@ async function init() {
     console.error(`Template "${templateName}" not found`);
     process.exit(1);
   }
-  fs.cpSync(templateDir, projectDir, { recursive: true });
+
+  renderTemplate(templateDir, projectDir);
 
   const packageJsonPath = path.join(projectDir, "package.json");
   const packageJson = require(packageJsonPath);
