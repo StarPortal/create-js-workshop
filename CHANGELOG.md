@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/StarPortal/create-js-workshop/compare/v0.2.0...v0.3.0) (2024-11-18)
+
+
+### Features
+
+* replace embed tsyringe middleware to @hono/tsyringe ([e59090d](https://github.com/StarPortal/create-js-workshop/commit/e59090d5c9604b5f0945b89620dadd466de1d70f))
+
 ## [0.2.0](https://github.com/StarPortal/create-js-workshop/compare/v0.1.0...v0.2.0) (2024-11-14)
 
 
