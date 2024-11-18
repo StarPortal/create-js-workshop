@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/StarPortal/create-js-workshop/compare/v0.3.0...v0.3.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* npm publish not build package before run it ([44d6117](https://github.com/StarPortal/create-js-workshop/commit/44d61170dcd4e10905fdff13d444b36ce31887eb))
+
 ## [0.3.0](https://github.com/StarPortal/create-js-workshop/compare/v0.2.0...v0.3.0) (2024-11-18)
 
 
