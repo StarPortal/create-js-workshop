@@ -16,3 +16,19 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: actions/setup-node@v4
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@starportal'
+      - run: yarn install --frozen-lockfile
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npx turbo run build
+        if: ${{ steps.release.outputs.release_created }}
+      - run: yarn publish --access public
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
