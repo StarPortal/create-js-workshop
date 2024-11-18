@@ -19,6 +19,7 @@
   "dependencies": {
     "@line/bot-sdk": "^9.4.4",
     "@hono/node-server": "^1.13.5",
+    "@hono/tsyringe": "^1.0.1",
     "hono": "^4.6.9",
     "reflect-metadata": "^0.2.2",
     "tsyringe": "^4.8.0"
