@@ -25,7 +25,7 @@
     "prettier": "^3.3.3",
     "tsup": "^8.5.1",
     "turbo": "^2.9.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "dependencies": {
     "prompts": "^2.4.2"
